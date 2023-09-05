@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu Página</title>
+    <title>Sistema de Gestión de Resoluciones</title>
 
     <!-- CSS de Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
                             <div class="card-body p-md-5 mx-md-4">
 
                                 <div class="text-center">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                    <img src="{{ asset('img/escudo-muni.svg') }}"
                                          style="width: 185px;" alt="logo">
                                     <h4 class="mt-1 mb-5 pb-1">Regístrate</h4>
                                 </div>
@@ -63,7 +63,7 @@
 
                                     <div class="d-flex align-items-center justify-content-center pb-4">
                                         <p class="mb-0 me-2">¿Ya tienes una cuenta?</p>
-                                        <a href="{{ route('login') }}" class="btn btn-outline-danger">Iniciar sesión</a>
+                                        <a href="{{ route('login') }}" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Iniciar sesión</a>
                                     </div>
 
                                 </form>

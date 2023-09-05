@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de tu Página</title>
+    <title>Sistema de Gestión de Resoluciones</title>
 
     <!-- CSS de Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,7 @@
             <div class="card-body">
                 <h2 class="card-title">Listado de Datos</h2>
                 <a href="{{ route('resol_tabla_dato_sim.create') }}" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Agregar Nuevo Dato</a>
+                <a href="{{ route('home') }}" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
                 <table class="table table-hover">
                     <thead>
                     <tr>

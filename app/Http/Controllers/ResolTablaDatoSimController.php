@@ -53,20 +53,20 @@ class ResolTablaDatoSimController extends Controller
         return view('resol_tabla_dato_sim.edit', ['dato' => $dato]);
     }
 
-    public function update(Request $request, ResolTableDatoSim $dato)
+    public function update(Request $request, $id)
     {
-        $dato->tabla_id = $request->tabla_id;
-        $dato->perdesde = $request->perdesde;
-        $dato->perhasta = $request->perhasta;
-        $dato->paramstr = $request->paramstr;
-        $dato->param1 = $request->param1;
-        $dato->param2 = $request->param2;
-        $dato->param3 = $request->param3;
-        $dato->param4 = $request->param4;
-        $dato->param5 = $request->param5;
-        $dato->fchmod = date('Y-m-d H:i:s');
-        $dato->usrmod = auth()->user()->id;
-        $dato->save();
+        $resol_tabla_dato_sim = ResolTableDatoSim::find($id);
+        $resol_tabla_dato_sim->perdesde = $request->perdesde;
+        $resol_tabla_dato_sim->perhasta = $request->perhasta;
+        $resol_tabla_dato_sim->paramstr = $request->paramstr;
+        $resol_tabla_dato_sim->param1 = $request->param1;
+        $resol_tabla_dato_sim->param2 = $request->param2;
+        $resol_tabla_dato_sim->param3 = $request->param3;
+        $resol_tabla_dato_sim->param4 = $request->param4;
+        $resol_tabla_dato_sim->param5 = $request->param5;
+        $resol_tabla_dato_sim->fchmod = date('Y-m-d H:i:s');
+        $resol_tabla_dato_sim->usrmod = auth()->user()->id;
+        $resol_tabla_dato_sim->save();
 
         return redirect()->route('resol_tabla_dato_sim.index')->with('status', 'Dato actualizado con éxito');
     }
@@ -74,8 +74,8 @@ class ResolTablaDatoSimController extends Controller
 
     public function destroy(ResolTableDatoSim $dato, $id)
     {
-        $dato = ResolTableDatoSim::find($id);
-        $dato->delete();
+        $resol_tabla_dato_sim = ResolTableDatoSim::find($id);
+        $resol_tabla_dato_sim->delete();
         return redirect()->route('resol_tabla_dato_sim.index');
     }
 }

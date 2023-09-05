@@ -24,6 +24,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/resol_tabla_dato_sim/{id}/edit', [ResolTablaDatoSimController::class, 'edit'])->name('resol_tabla_dato_sim.edit');
+Route::put('/resol_tabla_dato_sim/{id}', [ResolTablaDatoSimController::class, 'update'])->name('resol_tabla_dato_sim.update');
 Route::resource('resol_tabla_dato_sim', ResolTablaDatoSimController::class);
 
 
