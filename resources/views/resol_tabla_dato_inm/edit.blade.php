@@ -16,8 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="h-100 gradient-form" style="background-color: #eee;">
-    <div class="container">
+<section class="h-100 gradient-form">
+    <div class="container py-5">
         <h2>Editar Dato</h2>
         <form action="{{ route('resol_tabla_dato_inm.update', $dato->id) }}" method="POST">
         @csrf

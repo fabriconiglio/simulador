@@ -16,8 +16,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<section class="h-100 gradient-form" style="background-color: #eee;">
-    <div class="container">
+<section class="gradient-form">
+    <div class="container py-5">
         <h2>Agregar Nuevo Dato</h2>
         <form action="{{ route('resol_tabla_dato_inm.store') }}" method="POST">
             @csrf
@@ -65,6 +65,17 @@
                 <label for="param5">Parámetro 5</label>
                 <input type="number" step="any" name="param5" class="form-control" id="param5">
             </div>
+
+            <div class="form-group">
+                <label for="param6">Parámetro 6</label>
+                <input type="number" step="any" name="param6" class="form-control" id="param6">
+            </div>
+
+            <div class="form-group">
+                <label for="obs">Observaciones</label>
+                <input type="text" step="any" name="obs" class="form-control" id="obs">
+            </div>
+
             <button type="submit" class="btn btn-primary mt-4">Guardar</button>
             <a href="{{ route('resol_tabla_dato_inm.index') }}" class="btn btn-danger mt-4">Cancelar</a>
         </form>
