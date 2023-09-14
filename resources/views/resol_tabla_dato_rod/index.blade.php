@@ -70,49 +70,30 @@
                     <p><strong>Nota:</strong> El valor de cada parámetro varía según el punto:</p>
                     <ul class="mb-3">
                         <li>
-                            <strong>Inmuebles - Alícuotas y Mínimos:</strong>
+                            <strong>Obtengo Mínimo y Cantidad de años que liquida imp. Automotor:</strong>
                             <ul>
-                                <li><code>paramstr</code> es la <strong>zona</strong></li>
-                                <li><code>param1</code> es el <strong>regimen</strong></li>
-                                <li><code>param2</code> es <strong>supdesde</strong></li>
-                                <li><code>param3</code> es <strong>suphasta</strong></li>
-                                <li><code>param4</code> es <strong>alic</strong></li>
-                                <li><code>param5</code> es el <strong>mínimo</strong></li>
+                                <li><code>paramstr</code> es la <strong>valMinimo</strong></li>
+                                <li><code>param1</code> es el <strong>grupo</strong></li>
+                                <li><code>param2</code> es <strong>perdesde</strong></li>
+                                <li><code>param3</code> es <strong>hasta</strong></li>
+                                <li><code>param4</code> es <strong>minimo</strong></li>
+                                <li><code>param5</code> es el <strong>anio</strong></li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Mejoras y casos especiales:</strong>
+                            <strong>Básico:</strong>
                             <ul>
-                                <li><code>param1</code> es el <strong>dato valor</strong></li>
-                                <li><code>param6</code> es el <strong>nombre</strong></li>
-                                <li><code>obs</code> es la <strong>descripción</strong></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Coeficiente Zonal:</strong>
-                            <ul>
-                                <li><code>param1</code> es <strong>zona1</strong></li>
-                                <li><code>param2</code> es <strong>zona2</strong></li>
-                                <li><code>param3</code> es <strong>zona3</strong></li>
-                                <li><code>param4</code> es <strong>zona4</strong></li>
-                                <li><code>param5</code> es <strong>zona5</strong></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Cloacas:</strong>
-                            <ul>
-                                <li><code>param1</code> es <strong>porcedif</strong></li>
-                                <li><code>param2</code> es el <strong>mínimo para dif</strong></li>
-                                <li><code>param3</code> es el <strong>porcentaje para baldío</strong></li>
-                                <li><code>param4</code> es el <strong>mínimo para baldío</strong></li>
+                                <li><code>param1</code> es el <strong>desde</strong></li>
+                                <li><code>param2</code> es el <strong>hasta</strong></li>
+                                <li><code>param3</code> es el <strong>fijo</strong></li>
+                                <li><code>param4</code> es la <strong>alicuota</strong></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div class="d-flex justify-content-center mt-3">
-                <a href="{{ route('simulacion.ejecutarInmueble') }}" class="btn btn-success btn-sm mb-3"><i class="fas fa-play"></i> Ejecutar Simulación</a>
+                <a href="{{ route('simulacion.ejecutarRodado') }}" class="btn btn-success btn-sm mb-3"><i class="fas fa-play"></i> Ejecutar Simulación</a>
             </div>
         </div>
     </div>

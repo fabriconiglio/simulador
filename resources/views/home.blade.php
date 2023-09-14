@@ -46,7 +46,7 @@
             <div class="row justify-content-center align-items-center h-100"> <!-- Centrar vertical y horizontalmente -->
                 <!-- Botones -->
                 <div class="text-center mt-3"> <!-- Centrar horizontalmente y añadir espacio superior -->
-                    <a class="btn btn-primary btn-block nav-link active mb-3" href="{{ route('resol_tabla_dato_inm.index') }}">
+                    <a class="btn btn-primary btn-block nav-link active mb-3" href="{{ route('resol_tabla_dato_rod.index') }}">
                         <span data-feather="home"></span> EMISION_ROD
                     </a>
                     <a class="btn btn-primary btn-block nav-link active" href="{{ route('resol_tabla_dato_inm.index') }}">
