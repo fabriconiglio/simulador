@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ResolTableDatoSim extends Model
+class ResolTableDato extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $table = 'resol_tabla_dato_sim';
+    protected $table = 'resol_tabla_dato';
 
     protected $fillable = [
         'tabla_id',
@@ -24,6 +24,8 @@ class ResolTableDatoSim extends Model
         'param5',
         'fchmod',
         'usrmod',
+        'param6',
+        'obs',
     ];
 
     protected $dates = ['fchmod', 'deleted_at'];

@@ -19,7 +19,7 @@
 <section class="h-100 gradient-form" style="background-color: #eee;">
     <div class="container">
         <h2>Agregar Nuevo Dato</h2>
-        <form action="{{ route('resol_tabla_dato_sim.store') }}" method="POST">
+        <form action="{{ route('resol_tabla_dato_inm.store') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="tabla_id">Tabla ID</label>
@@ -66,7 +66,7 @@
                 <input type="number" step="any" name="param5" class="form-control" id="param5">
             </div>
             <button type="submit" class="btn btn-primary mt-4">Guardar</button>
-            <a href="{{ route('resol_tabla_dato_sim.index') }}" class="btn btn-danger mt-4">Cancelar</a>
+            <a href="{{ route('resol_tabla_dato_inm.index') }}" class="btn btn-danger mt-4">Cancelar</a>
         </form>
     </div>
 </section>

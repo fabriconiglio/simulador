@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ResolTablaDatoSimController;
+use App\Http\Controllers\ResolTablaDatoInmController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,8 +23,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/resol_tabla_dato_sim/{id}/edit', [ResolTablaDatoSimController::class, 'edit'])->name('resol_tabla_dato_sim.edit');
-Route::put('/resol_tabla_dato_sim/{id}', [ResolTablaDatoSimController::class, 'update'])->name('resol_tabla_dato_sim.update');
-Route::resource('resol_tabla_dato_sim', ResolTablaDatoSimController::class);
+Route::get('/resol_tabla_dato_inm/{id}/edit', [ResolTablaDatoInmController::class, 'edit'])->name('resol_tabla_dato_inm.edit');
+Route::put('/resol_tabla_dato_inm/{id}', [ResolTablaDatoInmController::class, 'update'])->name('resol_tabla_dato_inm.update');
+Route::resource('resol_tabla_dato_inm', ResolTablaDatoInmController::class);
 
 

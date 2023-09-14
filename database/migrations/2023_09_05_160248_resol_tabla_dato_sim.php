@@ -13,7 +13,7 @@ class ResolTablaDatoSim extends Migration
      */
     public function up()
     {
-        Schema::create("resol_tabla_dato_sim" , function (Blueprint $table) {
+        Schema::create("resol_tabla_dato_inm" , function (Blueprint $table) {
             $table->id();
             $table->integer("tabla_id")->nullable();
             $table->integer("perdesde")->nullable();
@@ -40,6 +40,6 @@ class ResolTablaDatoSim extends Migration
     public function down(): void
     {
         //
-        Schema::dropIfExists("resol_tabla_dato_sim");
+        Schema::dropIfExists("resol_tabla_dato_inm");
     }
 }

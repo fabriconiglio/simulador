@@ -39,31 +39,24 @@
     </div>
 </nav>
 
-
-<div class="container-fluid">
-    <div class="row">
-        <!-- Menú Lateral -->
-        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
-            <div class="position-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('resol_tabla_dato_sim.index') }}">
-                            <span data-feather="home"></span>
-                            Resol Tabla Dato Sim
-                        </a>
-                    </li>
-                    <!-- Aquí puedes agregar más ítems al menú lateral -->
-                </ul>
+<div class="container-fluid h-100">
+    <div class="row justify-content-center align-items-center h-100"> <!-- Centrar vertical y horizontalmente -->
+        <!-- Botones -->
+        <div class="container-fluid h-100">
+            <div class="row justify-content-center align-items-center h-100"> <!-- Centrar vertical y horizontalmente -->
+                <!-- Botones -->
+                <div class="text-center mt-3"> <!-- Centrar horizontalmente y añadir espacio superior -->
+                    <a class="btn btn-primary btn-block nav-link active mb-3" href="{{ route('resol_tabla_dato_inm.index') }}">
+                        <span data-feather="home"></span> EMISION_ROD
+                    </a>
+                    <a class="btn btn-primary btn-block nav-link active" href="{{ route('resol_tabla_dato_inm.index') }}">
+                        <span data-feather="home"></span> EMISION_INM
+                    </a>
+                </div>
             </div>
-        </nav>
-
-        <!-- Contenido Principal -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-            <!-- Aquí iría el contenido principal de tu página, por ejemplo, la lista de datos de 'resol_tabla_dato_sim' o cualquier otra vista. -->
-        </main>
+        </div>
     </div>
 </div>
-
 
 </body>
 </html>

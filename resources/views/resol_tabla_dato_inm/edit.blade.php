@@ -19,7 +19,7 @@
 <section class="h-100 gradient-form" style="background-color: #eee;">
     <div class="container">
         <h2>Editar Dato</h2>
-        <form action="{{ route('resol_tabla_dato_sim.update', $dato->id) }}" method="POST">
+        <form action="{{ route('resol_tabla_dato_inm.update', $dato->id) }}" method="POST">
         @csrf
             @method('PUT')
             <!-- Aquí irían los campos del formulario, por ejemplo: -->
@@ -69,7 +69,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary mt-4">Actualizar</button>
-            <a href="{{ route('resol_tabla_dato_sim.index') }}" class="btn btn-danger mt-4">Cancelar</a>
+            <a href="{{ route('resol_tabla_dato_inm.index') }}" class="btn btn-danger mt-4">Cancelar</a>
         </form>
     </div>
 </section>
